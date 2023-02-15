@@ -41,6 +41,7 @@
 2. Navigate to the directory where you installed the ChatGPT Discord bot
 3. Run `python3 main.py` to start the bot
 4. If run fail by **OpenAI Key** or **DISCORD_BOT_KEY** you should login to OpenAI platform or Discord Develop to regenerate key active
+5. <a href="https://discord.com/developers/applications/1072831986932121702/information">Discord Develop</a>
 
 ### Have a good chat!
 
