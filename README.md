@@ -27,7 +27,7 @@
   > **Warning**
   > The bot will easily be triggered in `replyall` mode, which could cause program failures
 
-# Setup
+<h1>Setup</h1>
 
 ## Install
 
@@ -40,6 +40,7 @@
 1. Open a terminal or command prompt
 2. Navigate to the directory where you installed the ChatGPT Discord bot
 3. Run `python3 main.py` to start the bot
+4. If run fail by **OpenAI Key** or **DISCORD_BOT_KEY** you should login to OpenAI platform or Discord Develop to regenerate key active
 
 ### Have a good chat!
 
