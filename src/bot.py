@@ -126,6 +126,11 @@ def run_discord_bot():
         await client.tree.sync()
         logger.info(f'{client.user} is now running!')
 
+    @client.tree.command(name="testserver", description="content")
+    async def testserver(interaction: discord.Interaction,*,message: str):
+      await interaction.response.defer(ephemeral=False)
+      await interaction.followup.send("test lan thu" + message)
+
     @client.tree.command(name="chat", description="Have a chat with ChatGPT")
     async def chat(interaction: discord.Interaction, *, message: str):
         global isReplyAll
