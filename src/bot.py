@@ -131,6 +131,12 @@ def run_discord_bot():
       await interaction.response.defer(ephemeral=False)
       await interaction.followup.send("test lan thu" + message)
 
+    @client.tree.command(name="weather", description="content")
+    async def weather(interaction: discord.Interaction,*,message: str):
+      response = responses.get_weather(message)
+      await interaction.response.defer(ephemeral=False)
+      await interaction.followup.send("nhiet do " + message + " dang la: " + str(response["main"]["temp"]) + "oC")
+
     @client.tree.command(name="chat", description="Have a chat with ChatGPT")
     async def chat(interaction: discord.Interaction, *, message: str):
         global isReplyAll
